@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaBooking | Software de Agenda y Gestión para Spas y Estéticas</title>
+    <meta name="description" content="Automatiza la gestión de tu Spa. Sistema de reservas online, recordatorios automáticos y control de inventario. Ahorra hasta 15 horas a la semana.">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema Markup for AI SEO and Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "SpaBooking",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "offers": {
+            "@type": "Offer",
+            "price": "49.00",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1250"
+          },
+          "description": "Software integral de gestión y agendamiento automático para spas, salones de belleza y centros de bienestar."
+        },
+        {
+          "@type": "Organization",
+          "name": "SpaBooking SaaS",
+          "url": "https://www.spabooking.com"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué es SpaBooking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SpaBooking es un software en la nube diseñado específicamente para spas y centros de estética que automatiza las reservas online, envía recordatorios a clientes y gestiona el inventario de productos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿SpaBooking envía recordatorios a los clientes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, el sistema envía automáticamente confirmaciones y recordatorios por WhatsApp y correo electrónico, reduciendo las ausencias (no-shows) hasta en un 40%."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="container nav-inner">
+            <div class="nav-logo">Spa<span>Booking</span></div>
+            <div class="nav-links" id="navLinks">
+                <a href="#caracteristicas">Características</a>
+                <a href="#como-funciona">Cómo Funciona</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#precios">Planes</a>
+                <a href="#demo" class="btn btn-primary nav-cta">Probar Demo Gratis</a>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Abrir menú" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content fade-up">
+                <span class="hero-tag">Software #1 para Centros de Bienestar</span>
+                <h1>La gestión de tu Spa, ahora en <em>piloto automático</em></h1>
+                <p class="hero-desc">Convierte visitantes en clientes recurrentes. Reduce ausencias un 40%, automatiza tu agenda 24/7 y enfócate en lo que mejor haces: brindar experiencias inolvidables.</p>
+                <div class="hero-actions">
+                    <a href="#demo" class="btn btn-primary">Probar Demo Gratis</a>
+                    <a href="#precios" class="btn btn-outline">Ver Planes y Precios</a>
+                </div>
+                <div class="hero-proof">
+                    <div class="avatars">
+                        <span>JC</span>
+                        <span>ML</span>
+                        <span>AP</span>
+                    </div>
+                    <p>Más de <strong>1,200 dueños</strong> ya optimizaron su tiempo.</p>
+                </div>
+            </div>
+            <div class="hero-visual fade-up">
+                <div class="arch-frame">
+                    <img src="img/hero-bg.png" alt="Fondo abstracto elegante para Spa" width="520" height="650" loading="eager">
+                </div>
+                <div class="hero-float-card card-booking">
+                    <div class="icon-circle green">
+                        <svg width="20" height="20" fill="none" stroke="#2E7D32" stroke-width="2" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+                    </div>
+                    <div class="card-info">
+                        <small>Nueva Reserva</small>
+                        <p>Masaje Relajante</p>
+                    </div>
+                </div>
+                <div class="hero-float-card card-stats">
+                    <div class="icon-circle blue">
+                        <svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <div class="card-info">
+                        <small>Ingresos Hoy</small>
+                        <p>+ $1,250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-grid fade-up">
+            <div>
+                <div class="stat-num">500k+</div>
+                <div class="stat-label">CITAS PROCESADAS</div>
+            </div>
+            <div>
+                <div class="stat-num">-40%</div>
+                <div class="stat-label">REDUCCIÓN DE AUSENCIAS</div>
+            </div>
+            <div>
+                <div class="stat-num">15h</div>
+                <div class="stat-label">AHORRADAS POR SEMANA</div>
+            </div>
+            <div>
+                <div class="stat-num">4.9/5</div>
+                <div class="stat-label">VALORACIÓN DE CLIENTES</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="caracteristicas">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="section-label">Características del Sistema</div>
+                <h2 class="section-title">Todo lo que necesitas para escalar tu negocio</h2>
+                <p class="section-subtitle mx-auto">Deja atrás el caos de las libretas y los mensajes perdidos. SpaBooking unifica tu operación en una plataforma intuitiva.</p>
+            </div>
+            
+            <div class="features-grid fade-up">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <h3>Agendamiento Online 24/7</h3>
+                    <p>Permite a tus clientes reservar sus tratamientos a cualquier hora desde su móvil. Tu calendario se actualiza en tiempo real sin intervención manual.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </div>
+                    <h3>Recordatorios Automáticos</h3>
+                    <p>Envía confirmaciones y recordatorios por WhatsApp y correo. Reduce drásticamente las inasistencias y protege los ingresos de tu spa.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h3>Control de Inventarios</h3>
+                    <p>Monitorea el uso de productos de cabina y las ventas de retail. Recibe alertas cuando necesites reabastecer cremas, aceites o insumos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" fill="none" stroke="var(--gold)" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <h3>Reportes Financieros</h3>
+                    <p>Visualiza tus ingresos, tratamientos más populares y desempeño del personal en un dashboard claro. Toma decisiones basadas en datos rentables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase -->
+    <section class="section showcase">
+        <div class="container showcase-grid">
+            <div class="showcase-img fade-up">
+                <!-- Usando la imagen del mockup del dashboard -->
+                <img src="img/dashboard-mockup.png" alt="Dashboard del software SpaBooking mostrando el calendario y reportes" loading="lazy" width="600" height="400">
+            </div>
+            <div class="showcase-content fade-up">
+                <div class="section-label">Interfaz Optimizada</div>
+                <h3>Domina el control de tu Spa desde una sola pantalla</h3>
+                <p>Nuestra plataforma está diseñada para ser tan relajante como tus tratamientos. Sin curvas de aprendizaje empinadas, tú y tu equipo estarán operando como expertos desde el día uno.</p>
+                <ul class="check-list">
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Vista de calendario diaria, semanal y mensual para todo tu personal.</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Fichas de clientes con historial de tratamientos y preferencias.</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Accesible desde tablet, móvil o computadora de escritorio.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section steps" id="como-funciona">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="section-label">Implementación Rápida</div>
+                <h2 class="section-title">Tu spa digitalizado en 3 simples pasos</h2>
+            </div>
+            
+            <div class="steps-grid fade-up">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <h3>Configura tus Servicios</h3>
+                    <p>Ingresa tus tratamientos, duraciones, precios y disponibilidad de tu personal en minutos.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <h3>Comparte tu Enlace</h3>
+                    <p>Agrega el botón de reservas a tu sitio web, Instagram y Facebook para captar citas 24/7.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <h3>Recibe Citas en Automático</h3>
+                    <p>Disfruta viendo cómo tu agenda se llena mientras el sistema maneja los recordatorios por ti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonios">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="section-label">Casos de Éxito</div>
+                <h2 class="section-title">Dueños de spas que transformaron su negocio</h2>
+            </div>
+            
+            <div class="testimonials-grid fade-up">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Antes perdíamos hasta 3 citas al día por clientes que olvidaban asistir. Con los recordatorios automáticos de WhatsApp de SpaBooking, nuestras inasistencias bajaron a casi cero. El sistema se paga solo."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="avatar">CV</div>
+                        <div class="info">
+                            <div class="name">Carolina Vargas</div>
+                            <div class="role">Directora, Aura Wellness Spa</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Estaba atada al teléfono respondiendo mensajes de disponibilidad. Ahora mis clientes agendan directo desde Instagram a medianoche. He recuperado mis fines de semana y mis ingresos subieron un 35%."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="avatar">MR</div>
+                        <div class="info">
+                            <div class="name">Mariana Ríos</div>
+                            <div class="role">Fundadora, Skin&Glow Estética</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"La herramienta de reportes cambió nuestra estrategia. Por fin sabemos qué masajes nos dejan más margen y podemos controlar el stock de cremas sin contar frascos uno por uno cada semana."</blockquote>
+                    <div class="testimonial-author">
+                        <div class="avatar">JP</div>
+                        <div class="info">
+                            <div class="name">Javier Ponce</div>
+                            <div class="role">Gerente, Oasis Thermal Center</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="precios">
+        <div class="container">
+            <div class="text-center fade-up">
+                <div class="section-label">Inversión Rentable</div>
+                <h2 class="section-title">Planes diseñados para crecer contigo</h2>
+                <p class="section-subtitle mx-auto">Sin contratos forzosos. Cancela cuando quieras. Prueba gratis durante 14 días.</p>
+            </div>
+            
+            <div class="pricing-grid fade-up">
+                <div class="price-card">
+                    <h3>Boutique</h3>
+                    <div class="price">$29<span>/mes</span></div>
+                    <p class="price-note">Perfecto para especialistas independientes</p>
+                    <ul>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 1 Miembro de staff</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Citas ilimitadas</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Página de reservas web</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Recordatorios por Email</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-outline">Comenzar Prueba</a>
+                </div>
+                
+                <div class="price-card featured">
+                    <h3>Crecimiento</h3>
+                    <div class="price">$49<span>/mes</span></div>
+                    <p class="price-note">Ideal para centros con equipo de trabajo</p>
+                    <ul>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Hasta 5 Miembros de staff</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> <strong>Recordatorios por WhatsApp</strong></li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Control de inventario básico</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Reportes financieros</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-gold">Comenzar Prueba</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Clínica / Premium</h3>
+                    <div class="price">$89<span>/mes</span></div>
+                    <p class="price-note">Para operaciones de alto volumen</p>
+                    <ul>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Staff Ilimitado</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Múltiples sucursales</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Marketing y promociones</li>
+                        <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Soporte prioritario 24/7</li>
+                    </ul>
+                    <a href="#demo" class="btn btn-outline">Comenzar Prueba</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section for AI SEO Extractability -->
+    <section class="section">
+        <div class="container fade-up">
+            <div class="text-center">
+                <div class="section-label">Resolviendo Dudas</div>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q" tabindex="0">
+                        ¿Qué es SpaBooking y cómo ayuda a mi negocio?
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>SpaBooking es un software de gestión diseñado específicamente para spas y centros de estética. Te ayuda centralizando tu agenda, permitiendo reservas online 24/7, enviando recordatorios automáticos para reducir ausencias y ofreciendo reportes financieros claros para optimizar tu rentabilidad.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q" tabindex="0">
+                        ¿Mis clientes necesitan descargar una app para reservar?
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>No. Tus clientes acceden a una página web de reservas amigable desde cualquier navegador móvil o de escritorio. Solo seleccionan el servicio, la hora, ingresan sus datos y listo. Puedes colocar este enlace en la biografía de tu Instagram o en tu sitio web actual.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-q" tabindex="0">
+                        ¿Cómo funciona la prueba gratuita de 14 días?
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="faq-a">
+                        <p>Al registrarte, obtienes acceso completo a todas las funciones del plan Crecimiento durante 14 días, sin necesidad de ingresar una tarjeta de crédito. Un especialista te guiará en la configuración inicial para que veas el valor del sistema de inmediato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="demo">
+        <div class="container fade-up">
+            <h2 class="section-title">El orden que tu Spa necesita está a un clic de distancia</h2>
+            <p>Únete a los centros de bienestar que ya han dejado atrás el estrés administrativo. Configura tu cuenta hoy y recibe tu primera reserva online mañana.</p>
+            <button class="btn btn-gold">Probar Demo Gratis (14 Días)</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Spa<span>Booking</span></div>
+                    <p class="footer-desc">Transformamos la manera en que los profesionales del bienestar gestionan sus negocios mediante tecnología intuitiva y automatización inteligente.</p>
+                </div>
+                <div>
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#">Integraciones</a></li>
+                        <li><a href="#">Casos de Éxito</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Blog para Spas</a></li>
+                        <li><a href="#">Guía de Marketing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SpaBooking SaaS. Todos los derechos reservados.</p>
+                <div style="display:flex;gap:16px;">
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Mobile -->
+    <div class="sticky-cta">
+        <a href="#demo" class="btn btn-primary">Probar Demo Gratis</a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar Scrolled State
+        const nav = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const q = item.querySelector('.faq-q');
+            q.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                faqItems.forEach(i => i.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+            
+            // Keyboard accessibility for FAQ
+            q.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    q.click();
+                }
+            });
+        });
+
+        // Intersection Observer for Fade-up Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
